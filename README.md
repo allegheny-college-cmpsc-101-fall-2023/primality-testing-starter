@@ -25,16 +25,15 @@ source code.
 
 ## Learning Objectives
 
-This assignment is about using introductory programming concepts and
-software development
-tools to complete a command line interface for testing primality
-of numbers. The learning objectives of this assignment are to:
+This assignment is about rememebering and understanding
+programming language constructs by running programs,
+observing output, and describing steps.
+The learning objectives of this assignment are to:
 
 1. Use Git and GitHub to manage source code file changes
-2. Use linters, code, and markdown formatters
-3. Use VS Code and virtual enviroment management tools
-4. Use profiling, Tuples, and range appropriately
-5. Write clearly about the coding and development concepts in this assignment.
+2. Study type annotation in function declarations, floating point
+arithmetic, and modulus operations
+3. Write clearly about the programming concepts in this assignment.
 
 ## Seeking Assistance
 
