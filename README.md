@@ -1,6 +1,6 @@
-![Proactive Programmers](.github/images/Square-Proactive-Programmers-Logo.svg)
+# Primality Testing Engineering Effort
 
-# Primality Testing
+![Proactive Programmers](.github/images/Square-Proactive-Programmers-Logo.svg)
 
 [![build](../../actions/workflows/build.yml/badge.svg)](../../actions/)
 ![Platforms: Linux, MacOS, Windows](https://img.shields.io/badge/Platform-Linux%20%7C%20MacOS%20%7C%20Windows-blue.svg)
@@ -9,43 +9,33 @@
 [![Commits: Conventional](https://img.shields.io/badge/Commits-Conventional-blue.svg)](https://www.conventionalcommits.org/en/v1.0.0/)
 [![Discord](https://img.shields.io/discord/872320492936257537?logo=discord)](https://discord.gg/kjah8MFYbR)
 
-## Introduction
-
-If you are a student completing this project as part of a class at Allegheny
-College, please check the [Proactive Programmers Discord
-server](https://discord.gg/kjah8MFYbR) for the assignment's due date. You can
-learn more about this assignment by reading the [Integer
-Squaring](https://proactiveprogrammers.com/data-abstraction/engineering-efforts/primality-testing/)
-project description on the [Proactive Programmers web
-site](https://proactiveprogrammers.com). Please note that the content provided
-in the README file for this GitHub repository is an overview of the project and
-thus does not include the details concerning all the steps needed to
-successfully complete the every project deliverable. Finally, it is important to
-point out that your repository for this project was created from the GitHub
-repository template called
-[primality-testing-starter](https://github.com/ProactiveProgrammers/primality-testing-starter).
-You can check this repository for any updates to this project's documentation or
+- Due date: Check the [Proactive Programmers Discord
+server](https://discord.gg/kjah8MFYbR).
+- This assignment will be submitted on GitHub following
+the expectations in the syllabus on
+[Assignment Submission](https://github.com/allegheny-college-cmpsc-101-fall-2023/course-materials#assignment-submission).
+- To begin, read this `README` and the
+[Primality Testing project description](https://proactiveprogrammers.com/data-abstraction/engineering-efforts/primality-testing/)
+on the Proactive Programmers website.
+You can check the
+[primality-testing-starter repository](https://github.com/allegheny-college-cmpsc-101-fall-2023/primality-testing-starter)
+for any updates to this project's documentation or
 source code.
 
 ## Seeking Assistance
 
-Even though the course instructor will have covered all of the concepts central
-to this project before you start to work on it, please note that not every
-detail needed to successfully complete the assignment will have been covered
-during prior classroom sessions. This is by design as an important skill that
-you must practice as a proactive programmer is to search for and then understand
-and ultimately apply the technical content found in additional resources.
+Please review the course expectations on the syllabus about
+[Seeking Assistance](https://github.com/allegheny-college-cmpsc-101-fall-2023/course-materials#seeking-assistance).
+Students are reminded
+to uphold the Honor Code. Cloning the assignment repository is a
+commitment to the latter.
 
-Emerging proactive programmers who have questions about this project are invited
-to ask them in either the [GitHub discussions
-forum](https://github.com/ProactiveProgrammers/www.proactiveprogrammers.com/discussions)
-or the [Proactive Programmers Discord server](https://discord.gg/kjah8MFYbR).
-Before you ask your question, please read the advice concerning how to best
-participate in the [Proactive Programmers
-community](https://proactiveprogrammers.com/proactive-community/community-connections/).
-If you find a mistake in this project, please describe it and propose a solution
-by creating an issue in the [GitHub Issue
-Tracker](https://github.com/ProactiveProgrammers/www.proactiveprogrammers.com/issues).
+For this assignment, you may use class materials, textbooks, notes, and the
+internet. However,when asked to write "in your own words", you must use
+_your own_ words.
+
+Post questions to the
+[Proactive Programmers Discord server](https://discord.gg/kjah8MFYbR).
 
 ## Project Overview
 
@@ -59,7 +49,7 @@ steps:
   to take all of the needed steps and to complete all of the required
   deliverables.
 - Use the `cd` command to change into the directory for this repository.
-- Specifically, you can change into the program directory by typing `cd square`.
+- Specifically, you can change into the program directory by typing `cd primality`.
 - Install the dependencies for the project by typing `poetry install`.
 - Run the program in the following fashion by typing:
   - `poetry run primality --number 49979687 --approach efficient`
