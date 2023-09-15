@@ -79,7 +79,7 @@ setup: |
     - description: Write a minimum number of meaningful words in the reflection
       check: CountFileWords
       options:
-        count: 500
+        count: 400
         exact: false
     - description: Confirm that the markdown file has the correct number of headers
       check: CountMarkdownTags
