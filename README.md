@@ -14,6 +14,7 @@ server](https://discord.gg/kjah8MFYbR).
 - This assignment will be submitted on GitHub following
 the expectations in the syllabus on
 [Assignment Submission](https://github.com/allegheny-college-cmpsc-101-fall-2023/course-materials#assignment-submission).
+- modifications to the gatorgrade.yml file are not permitted without explicit instruction.
 - To begin, read this `README` and the
 [Primality Testing project description](https://proactiveprogrammers.com/data-abstraction/engineering-efforts/primality-testing/)
 on the Proactive Programmers website.
@@ -21,6 +22,19 @@ You can check the
 [primality-testing-starter repository](https://github.com/allegheny-college-cmpsc-101-fall-2023/primality-testing-starter)
 for any updates to this project's documentation or
 source code.
+
+## Learning Objectives
+
+This assignment is about using introductory programming concepts and
+software development
+tools to complete a command line interface for testing primality
+of numbers. The learning objectives of this assignment are to:
+
+1. Use Git and GitHub to manage source code file changes
+2. Use linters, code, and markdown formatters
+3. Use VS Code and virtual enviroment management tools
+4. Use profiling, Tuples, and range appropriately
+5. Write clearly about the coding and development concepts in this assignment.
 
 ## Seeking Assistance
 

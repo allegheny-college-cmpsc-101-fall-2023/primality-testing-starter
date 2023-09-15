@@ -2,13 +2,22 @@
 
 # TODO: Add all of the required imports for the program,
 # ensuring that they are in the correct order mandated
-# by the industry-standard set by the isort program
+# by the industry-standard set by the isort program.
+# There are multiple ways to do this, but using poetry
+# you can run the command
+# `poetry run isort path/to/file/or/directory`.
+# Note that this format of poetry command can be applied for
+# other checks as well, including pylint, flake8, mypy, etc.
 
 # TODO: create a Typer object to support the command-line interface
 
+# TODO: Research profiling
+# https://en.wikibooks.org/wiki/Introduction_to_Software_Engineering/Testing/Profiling
 # TODO: create a Profiler object to support timing program code segments
-# TODO: Refer to https://github.com/joerick/pyinstrument to learn more
-# about how you need to construct the Profiler object and later use it
+# TODO: Refer to the pyinstrument documentation
+# https://pyinstrument.readthedocs.io/en/latest/guide.html#profile-a-specific-chunk-of-code
+# to learn more about how you need to construct the Profiler object
+# and later use it.
 
 
 class PrimalityTestingApproach(str, Enum):
@@ -17,7 +26,8 @@ class PrimalityTestingApproach(str, Enum):
     EXHAUSTIVE = "exhaustive"
     EFFICIENT = "efficient"
 
-
+# TODO: Produce a human-readable Yes or No for a boolean value of True or False.
+# TODO: You may wish to review the Integer Square code to find an example of this
 def human_readable_boolean(answer: bool) -> str:
     """Produce a human-readable Yes or No for a boolean value of True or False."""
     # TODO: produce a human-readable value for a bool
@@ -26,7 +36,8 @@ def human_readable_boolean(answer: bool) -> str:
     # This return value is a placeholder
     return "Yes"
 
-
+# TODO: Research the type annotations here and change one if necessary
+# https://mypy.readthedocs.io/en/stable/cheat_sheet_py3.html
 def pretty_print_list(values: Iterable[int]) -> str:
     """Pretty print a list without brackets and adding commas."""
     # TODO: create and return a version of the list without brackets
@@ -34,6 +45,9 @@ def pretty_print_list(values: Iterable[int]) -> str:
     # TODO: This return value is a placeholder; replace it with a correct one
     return ""
 
+# TODO: Research the type annotations here, which are correct
+# https://python-reference.readthedocs.io/en/latest/docs/tuple/#tuple
+# https://python-reference.readthedocs.io/en/latest/docs/tuple/literals.html
 def primality_test_exhaustive(number: int) -> Tuple[bool, List[int]]:
     """Perform an exhaustive primality test on the provided integer."""
     # TODO: declare the smallest_divisor with default of None
@@ -48,21 +62,28 @@ def primality_test_exhaustive(number: int) -> Tuple[bool, List[int]]:
     # --> a List[int] for the list with the smallest divisor for the number
     # --> if the number is prime, return the List[int] with both the number and 1
     # TODO: This return value is a placeholder; replace it with a correct one
+    # TODO: Note that the tuple is not initialized.
     return (False, [0,1])
 
-
+# TODO: consider the type annotations here, which are correct
+# TODO: Research Tuples
+# https://python-reference.readthedocs.io/en/latest/docs/tuple/#tuple
+# https://python-reference.readthedocs.io/en/latest/docs/tuple/literals.html
 def primality_test_efficient(number: int) -> Tuple[bool, List[int]]:
     """Perform an efficient primality test on the provided integer."""
     smallest_divisor = None
     # TODO: determine first if the number is even and then confirm
     # that it does have a smallest_divisor of 2
     # TODO: if the number is not even, then iteratively perform primality test
-    # TODO: use a range function that skips over the even values
+    # TODO: Research range
+    # https://python-reference.readthedocs.io/en/latest/docs/functions/range.html
+    # TODO: use a range that skips over the even values
     # TODO: make sure that the function returns:
     # --> a bool for whether or not the number was prime
     # --> a List[int] for the list with the smallest divisor for the number
     # --> if the number is prime, return the List[int] with both the number and 1
     # TODO: This return value is a placeholder; replace it with a correct one
+    # TODO: Note that the tuple is not initialized.
     return (False, [0,1])
 
 
@@ -80,15 +101,21 @@ def primality(
     # TODO: use the efficient primality testing algorithm
     if approach.value == PrimalityTestingApproach.EFFICIENT:
         # Reference for more details:
+        # https://pyinstrument.readthedocs.io/en/latest/guide.html#profile-a-specific-chunk-of-code
         # https://github.com/joerick/pyinstrument
-        # TODO: perform profiling on the execution of the primality test
-        # TODO: do not perform profiling
+        # TODO: determine whether the CLI profile option is True
+            # TODO: perform profiling on the execution of the primality test
+        # TODO: determine whether the CLI profile option if False
+            # TODO: do not perform profiling
     # TODO: use the exhaustive primality testing algorithm
     elif approach.value == PrimalityTestingApproach.EXHAUSTIVE:
         # Reference for more details:
+        # https://pyinstrument.readthedocs.io/en/latest/guide.html#profile-a-specific-chunk-of-code
         # https://github.com/joerick/pyinstrument
-        # TODO: perform profiling on the execution of the primality test
-        # TODO: do not perform profiling
+        # TODO: determine whether the CLI profile option is True
+            # TODO: perform profiling on the execution of the primality test
+        # TODO: determine whether the CLI profile option if False
+            # TODO: do not perform profiling
     # display the results of the primality test
     was_prime_found = primality_tuple[0]
     divisor_list = primality_tuple[1]

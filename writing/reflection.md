@@ -4,6 +4,10 @@ TODO: Please delete all of the TODO markers from this file so that you have a
 professionally formatted and organized reflection that would be suitable for
 posting on a public web site.
 
+TODO: Please honsetly address every part of this reflection to get a check on
+the Engineering Effort Technical Writing Skills, which accounts for 16.6% of
+the total Engineering Effort Grade.
+
 TODO: Delete the phrase "Add Your Name Here" and then add your name.
 
 ## Add Your Name Here
@@ -12,16 +16,11 @@ TODO: Delete the phrase "Add Your Name Here" and then add your name.
 
 ### Use six fenced code blocks to provide output from different runs of `primality` with different inputs
 
-TODO: Pick three different input values and run then each with
-(a) the exhaustive algorithm
-and
-(b) the efficient algorithm
-
-TODO: Overall, provide a total of six commands and six fenced code blocks
-TODO: Three outputs should be from the efficient algorithm and three should be with the exhaustive algorithm
-TODO: Run the exhaustive and efficient algorithm with the same inputs
-
 #### Three outputs from running the exhaustive algorithm
+
+TODO: Choose three different inputs to run the exhaustive search.
+TODO: Ensure that at least one run produces meaningful profiler
+output.
 
 TODO: Provide the specific command that you ran to produce this output
 TODO: Use a fenced code block to provide the output for this command.
@@ -34,6 +33,10 @@ TODO: Use a fenced code block to provide the output for this command.
 
 #### Three outputs from running the efficient algorithm
 
+TODO: Use the _same_ inputs as above to run the efficient algorithm
+TODO: Ensure that at least one run produces meaningful profiler
+output.
+
 TODO: Provide the specific command that you ran to produce this output
 TODO: Use a fenced code block to provide the output for this command.
 
@@ -45,19 +48,17 @@ TODO: Use a fenced code block to provide the output for this command.
 
 ## Performance Analysis
 
+TODO: Compute the $ T_{\Delta} $ of running `primality` in efficient mode
+instead of exhaustive mode. Use the equation in the project description
+to explain how much faster one algorithm is compared to the other.
+
+TODO: Make sure that you refer to the
+[online description of this project](https://proactiveprogrammers.com/data-abstraction/engineering-efforts/primality-testing/)
+to learn about computing percent changes in algorithmic efficiency.
+
 TODO: Provide one paragraph that states which algorithm is fastest, by how much
-it is faster, and how you knew that the it was faster, referencing the data in
+it is faster, and how you knew that it was faster, referencing the data in
 the aforementioned command outputs to support your response.
-
-TODO: Make sure that you refer to the online description of this project at:
-
-https://proactiveprogrammers.com/data-abstraction/engineering-efforts/primality-testing/
-
-TODO: Use the description of the `T_Delta` variable, or the percentage change in
-the execution time when running `primality` in efficient mode instead of
-exhaustive, when you are describing your performance analysis. That is, you
-should be able to use the equation in the project description to explain how
-much faster one algorithm is compared to the other.
 
 ## Source Code
 
@@ -71,7 +72,8 @@ TODO: Write at least one paragraph to explain the requested source code
 #### A function signature that defines the command-line interface for `primality`
 
 TODO: Use a fenced code block to provide the requested source code
-TODO: Write at least one paragraph to explain the requested source code
+TODO: State how the CLI user access the parameters in the function signature.
+TODO: Relate the accepted values of the CLI options to branches in the code.
 
 ## Professional Development
 
@@ -82,3 +84,18 @@ TODO: Provide a one-paragraph response that answers this question in your own wo
 ### What was the greatest challenge that you faced when completing this assignment?
 
 TODO: Provide a one-paragraph response that answers this question in your own words.
+
+## Extensions
+
+OPTIONAL: The extensions in this section have no impact on grade.
+They are simply for further exploration if desired.
+
+OPTIONAL: Gather data from 10 profiled runs of the exhaustive search,
+and 10 profiled runs of the efficient search with the same input.
+Compute the $ T_{\Delta} $ for each of the 10 runs, then take the grand
+mean of the 10 $ T_{\Delta} $'s. Report both the grand mean, and the
+standard deviation of 10 $ T_{\Delta} $'s.
+
+OPTIONAL: Write a python script to do the empirical evaluation above
+for 1, 10, 100, and 1000 runs. Include a plot showing the differences
+in the grand means and/or the standard deviations.

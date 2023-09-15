@@ -9,6 +9,7 @@ def test_version():
     """Confirm that the version of the program is correct."""
     assert __version__ == "0.1.0"
 
+# TODO: add comments to two functions, exhaustively explaining the code
 
 def test_exhaustive_primality_prime_number():
     """Confirm that a primality testing function can detect a prime number."""
